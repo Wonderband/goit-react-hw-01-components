@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import styles from './FriendListItem.module.css';
 const FriendListItem = ({ avatar, name, isOnline }) => {
-    const variant = isOnline ? 'green' : 'red';
+    const color = isOnline ? 'green' : 'red';
     return (<li className={styles.item}>
-        <span className={styles[variant]}></span>
+        <span className={styles[color]}></span>
         <img className="avatar" src={avatar} alt="User avatar" width="48" />
         <p className="name">{name}</p>
     </li>)
