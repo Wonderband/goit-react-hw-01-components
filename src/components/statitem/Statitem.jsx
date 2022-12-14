@@ -1,8 +1,9 @@
 import PropTypes from "prop-types";
-const StatItem = ({type, percent}) => (    
-    <li className="item">
-        <span className="label">{type}</span>
-        <span className="percentage">{percent}</span>        
+import styles from './StatItem.module.css';
+const StatItem = ({ type, percent }) => (
+    <li className={styles.item}>
+        <span className={styles.label}>{type}</span>
+        <span className={styles.percentage}>{percent}%</span>        
     </li>            
 );
 export default StatItem;

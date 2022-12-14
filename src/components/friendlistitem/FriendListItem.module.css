@@ -1,0 +1,26 @@
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    font-size: 20px;
+    border: 1px solid black;
+    width: 400px;
+    box-shadow: 3px 3px 3px rgb(17, 16, 16);
+}
+
+.status {
+    display: block;
+    width: 20px;
+    height: 20px;    
+    border-radius: 100%;
+}
+
+.green {
+    composes: status;
+    background-color: green;
+}
+
+.red {
+    composes: status;
+    background-color: red;
+}
